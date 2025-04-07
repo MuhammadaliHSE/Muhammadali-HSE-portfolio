@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Ali - HSE Professional</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header Styles */
+        header {
+            background-color: #1e90ff;
+            padding: 20px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+        
+        .logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        /* Navigation Styles */
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-left: 20px;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        
+        nav ul li a:hover {
+            background-color: rgba(255,255,255,0.2);
+        }
+        
+        /* Section Styles */
+        section {
+            padding: 40px 0;
+        }
+        
+        section h2 {
+            margin-bottom: 20px;
+            font-size: 28px;
+            color: #1e3a8a;
+            border-bottom: 2px solid #1e90ff;
+            padding-bottom: 10px;
+        }
+        
+        .section-content {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+        
+        /* Profile Section */
+        .profile-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #1e90ff;
+            margin-right: 30px;
+        }
+        
+        .profile-info h1 {
+            color: #1e3a8a;
+            margin-bottom: 10px;
+        }
+        
+        .profile-info p {
+            color: #666;
+            margin-bottom: 5px;
+        }
+        
+        /* Content Styles */
+        ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        .job {
+            margin-bottom: 25px;
+        }
+        
+        .job-title {
+            font-weight: bold;
+            color: #1e3a8a;
+        }
+        
+        .company {
+            font-style: italic;
+        }
+        
+        .duration {
+            color: #666;
+            font-size: 0.9em;
+        }
+        
+        /* Contact Styles */
+        .contact-info {
+            margin-top: 20px;
+        }
+        
+        .contact-info p {
+            margin-bottom: 10px;
+        }
+        
+        .email-link {
+            display: inline-block;
+            background-color: #1e90ff;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 10px;
+            transition: background-color 0.3s;
+        }
+        
+        .email-link:hover {
+            background-color: #1e3a8a;
+        }
+        
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+            }
+            
+            .logo {
+                margin-bottom: 15px;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            nav ul li {
+                margin: 5px 0;
+            }
+            
+            .profile-header {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .profile-img {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header with Logo and Navigation -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="images/logo.png" alt="MA Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#profile">Profile</a></li>
+                    <li><a href="#cover-letter">Cover Letter</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Profile Section -->
+    <section id="profile">
+        <div class="container">
+            <div class="section-content">
+                <div class="profile-header">
+                    <img src="images/profile.jpg" alt="Muhammad Ali" class="profile-img">
+                    <div class="profile-info">
+                        <h1>MUHAMMAD ALI</h1>
+                        <p>NEBOSH, IOSH, OSHA Certified HSE Professional</p>
+                        <p>+966 50 575 0875 | malikmuhammadali27@gmail.com</p>
+                        <p>Kingdom of Saudi Arabia</p>
+                    </div>
+                </div>
+                
+                <h2>CAREER OBJECTIVES</h2>
+                <p>To contribute as part of a dynamic team within a reputable organization that fosters individual excellence and provides opportunities to leverage my technical and HSE expertise. My primary objectives are to achieve zero accidents, eliminate lost-time injuries, and ensure a safe, hygienic, and compliant workplace.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cover Letter Section -->
+    <section id="cover-letter">
+        <div class="container">
+            <div class="section-content">
+                <h2>COVER LETTER</h2>
+                <p>Dear Sir/Madam,</p>
+                <p>Your esteemed and sublime organization motivated me to write this cover letter for an opportunity to serve your reputed company.</p>
+                <p>I am a fully qualified safety and health professional with over five years of experience serving various companies in Saudi Arabia. I hold administrative qualifications from NEBOSH, IOSH, and OSHA. Some of my strengths/skills include:</p>
+                
+                <ul>
+                    <li>Carrying out fire drills</li>
+                    <li>Attending safety committee meetings</li>
+                    <li>Ensuring the safe installation of equipment</li>
+                    <li>Managing hazardous substances and the disposal of chemicals</li>
+                    <li>Developing preventative and remedial programs of health and safety</li>
+                    <li>Carrying out risk assessments and looking at how risks could be reduced</li>
+                    <li>Planning practical and effective solutions towards safe working practices</li>
+                    <li>Making changes to working practices that are safe and comply with legislation</li>
+                    <li>Keeping records of incidents and accidents and producing statistics for managers</li>
+                    <li>Keeping records of inspections findings and producing reports suggesting improvements</li>
+                    <li>Leading in-house training sessions for managers and employees on health and safety issues and risk management</li>
+                    <li>Outlining safe operational procedures, which identify all relevant hazards, accurately assess risks</li>
+                    <li>Carrying out accident investigations on sites and producing subsequent reports and recommendations with corrective and preventive measures</li>
+                </ul>
+                
+                <p>The enclosed curriculum vitae will provide you complete information regarding my experience, education and accomplishments. Being a learned and skilled professional, I can offer your company a unique blend of talent, commitment, and experience.</p>
+                <p>I am looking forward to have a meeting with you to discuss how I can apply my skills and expertise to the future success and development of your dignified company.</p>
+                <p>Sincerely yours,<br>Muhammad Ali</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications">
+        <div class="container">
+            <div class="section-content">
+                <h2>SAFETY CERTIFICATES</h2>
+                <ul>
+                    <li>(NEBOSH) National Examination Board in Occupational Safety and Health</li>
+                    <li>(OSHA) 48 hours certificate in Occupational Health and Safety Manager</li>
+                    <li>(IOSH) Institute of Occupational Safety and Health</li>
+                    <li>First Aid Training from Emirates Institute of Occupational Safety and Health</li>
+                    <li>Basic Scaffolding Techniques & Safety Awareness from Emirates Institute of Occupational Safety and Health</li>
+                    <li>Fire Safety from Emirates Institute of Occupational Safety and Health</li>
+                </ul>
+                
+                <h2>SPECIAL TRAININGS ATTENDED</h2>
+                <div style="column-count: 2; column-gap: 30px;">
+                    <ul>
+                        <li>Housekeeping</li>
+                        <li>Lifting operation</li>
+                        <li>Risk Assessment</li>
+                        <li>HACCP Trainings</li>
+                        <li>Waste Management</li>
+                        <li>Good house Keeping</li>
+                        <li>Fire precaution training</li>
+                        <li>Confined Space Training</li>
+                        <li>Pre commissioning Training</li>
+                        <li>Accident and Incident reporting</li>
+                        <li>First aid</li>
+                        <li>Scaffolding</li>
+                        <li>Supervisory skills</li>
+                        <li>Defensive driving</li>
+                        <li>Job safety analysis</li>
+                        <li>Hazard management</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <div class="container">
+            <div class="section-content">
+                <h2>PROFESSIONAL EXPERIENCE</h2>
+                
+                <div class="job">
+                    <p class="job-title">Safety Officer</p>
+                    <p class="company">TIEJUN - IWP (Jazlah)/ SWPC 380/33 KV SUBSTAION</p>
+                    <p class="duration">November 2022 to Present</p>
+                </div>
+                
+                <div class="job">
+                    <p class="job-title">HSE Officer</p>
+                    <p class="company">Shapoorji Pallonji - KSA Branch - King Abdullah Financial District (Area J03)</p>
+                    <p class="duration">November 2021 to October 2022</p>
+                </div>
+                
+                <div class="job">
+                    <p class="job-title">Safety Officer</p>
+                    <p class="company">Ali Said Jalal Contracting Est. - Warehouse Park Construction (EEC)</p>
+                    <p class="duration">October 2018 to June 2019</p>
+                </div>
+                
+                <h2>DUTIES AND RESPONSIBILITIES</h2>
+                <ul>
+                    <li>Conduct routine functional tasks, such as toolbox meetings and supervising critical safety activities like lifting operations</li>
+                    <li>Perform spot inspections of equipment and report findings to higher management</li>
+                    <li>Attend weekly meetings with clients and consultants to discuss site issues</li>
+                    <li>Prepare property damage reports</li>
+                    <li>Conduct refresher courses and provide MSDS (Material Safety Data Sheets) orientation</li>
+                    <li>Perform daily inspections of workers to ensure they are using prescribed safety gear</li>
+                    <li>Inspect fire extinguishers on a scheduled basis and arrange for servicing when needed</li>
+                    <li>Ensure safety posters, boards, and other required charts are displayed at relevant installations</li>
+                    <li>Monitor housekeeping standards in all designated areas</li>
+                    <li>Oversee commissioning activities to ensure compliance with safety protocols</li>
+                    <li>Before leaving the job site, ensure all unfinished tasks are secured with appropriate safety signage</li>
+                    <li>Monitor all site activities to verify adherence to safety procedures</li>
+                    <li>Conduct safety audits, provide instructions, and train company and contractor staff</li>
+                    <li>Participate in weekly safety inspections jointly with the client and prepare deviation reports</li>
+                    <li>Coordinate safety activities between the client and subcontractors</li>
+                    <li>Audit machinery, PPE, housekeeping practices, and hand tools for safety compliance</li>
+                    <li>Prepare daily, weekly, and monthly reports</li>
+                    <li>Investigate and report accidents and incidents</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section>
+        <div class="container">
+            <div class="section-content">
+                <h2>EDUCATION</h2>
+                <p>Higher Secondary School Certificate (HSSC)<br>
+                Board of intermediate and secondary education Peshawar</p>
+                
+                <p>Secondary School Certificate (HSSC)<br>
+                Board of intermediate and secondary education Peshawar</p>
+                
+                <h2>COMPUTER SKILLS</h2>
+                <ul>
+                    <li>Proficient in personal computing</li>
+                    <li>MS Office (Word, Excel, etc.)</li>
+                    <li>Familiar with computer software and hardware</li>
+                    <li>Skilled in internet surfing, Windows installation, and computer hardware setup</li>
+                </ul>
+                
+                <h2>PERSONAL DETAILS</h2>
+                <ul>
+                    <li>Full Name: Muhammad Ali</li>
+                    <li>Nationality: Pakistani</li>
+                    <li>Visa Status: Transferable</li>
+                    <li>Languages: English, Urdu, Pashto</li>
+                    <li>Email Address: malikmuhammadali27@gmail.com</li>
+                    <li>Marital Status: SINGLE</li>
+                    <li>Availability: IMMEDIATE/ FULL TIME</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="section-content">
+                <h2>CONTACT ME</h2>
+                <div class="contact-info">
+                    <p>I am available for immediate employment and would welcome the opportunity to discuss how I can contribute to your organization's safety goals.</p>
+                    <a href="mailto:malikmuhammadali27@gmail.com" class="email-link">Email Me</a>
+                    <p>Phone: +966 50 575 0875</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Muhammad Ali - HSE Professional. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
